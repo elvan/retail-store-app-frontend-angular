@@ -1,6 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductCategoryMenuComponent } from './components/product-category-menu/product-category-menu.component';
@@ -16,7 +17,7 @@ import { SearchComponent } from './components/search/search.component';
     ProductListComponent,
     SearchComponent,
   ],
-  imports: [AppRoutingModule, BrowserModule, HttpClientModule],
+  imports: [AppRoutingModule, BrowserModule, HttpClientModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
 })
